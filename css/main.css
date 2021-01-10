@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto/Roboto-Medium.ttf") format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Georgia';
+  src: url("../assets/fonts/Georgia/Georgia-Bold.eot");
+  src: local('Georgia Bold'), local('Georgia-Bold'), url("../assets/fonts/Georgia/Georgia-Bold.eot?#iefix") format('embedded-opentype'), url("../assets/fonts/Georgia/Georgia-Bold.woff2") format('woff2'), url("../assets/fonts/Georgia/Georgia-Bold.woff") format('woff'), url("../assets/fonts/Georgia/Georgia-Bold.ttf") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  margin: 0;
+  font-family: Roboto;
+  min-width: 900px;
+  min-height: 480px;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+* {
+  outline: none;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+*::-webkit-scrollbar-track-piece {
+  background: inherit;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 1.5px;
+  background-color: #c1c1c1;
+  cursor: pointer;
+}
