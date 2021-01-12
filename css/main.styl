@@ -298,4 +298,70 @@ a
 		opacity 1
 	&.selected
 		opacity 1
-	
+
+
+.grid-images
+	margin-top 50px
+	display flex
+	flex 1
+	transform: translate(-10px,0);
+	width: calc(100% + 20px);
+	.grid-images__box
+		display flex
+		&.column
+			flex-direction column
+		&.big
+			flex 1
+			.grid-images__img
+				width 100%
+				height: calc(100% - 20px);	
+	.grid-images__img
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 280px;
+		height: 280px;
+		margin 10px
+		position relative
+		.grid-images__title
+			display none
+		&:hover
+			.grid-images__title
+				display flex
+				position absolute
+				width 100%
+				bottom 0
+				left 0
+				.grid-images__title-text
+					display -webkit-box
+					
+					mix-blend-mode: color-dodge;
+					z-index 1
+					margin auto 24px 25px 24px
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 21px;
+					color: #FFFFFF;
+					
+					-webkit-line-clamp: 5;
+					-webkit-box-orient: vertical;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					
+					min-height 45px
+					height: auto;
+					max-height: 155px;
+					
+					padding: 25px 0 0 0;
+					box-sizing: border-box;
+				&:after
+					content ''
+					position absolute
+					background: #3F3C47;
+					mix-blend-mode: multiply;
+					opacity: 0.5;
+					height 100%
+					width 100%
+					bottom 0
+					left 0
+			
