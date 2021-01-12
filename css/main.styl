@@ -155,7 +155,7 @@ a
 			position: absolute;
 			bottom: -9px;
 			left 50%
-			transform: translate(-50%, 100%);
+			transform: translate(-50%,100%) rotate(180deg);
 			background url('../assets/images/arrow-top.svg')
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -163,6 +163,21 @@ a
 		.n-m-elem-box__text
 			color: #929292;
 			font-weight 500
+		&.open
+			&:after
+				content ''
+				position fixed
+				height 100%
+				width 100%
+				top 0
+				left 0
+				z-index 10
+			.drop-down-menu
+				display block
+				z-index 11
+			&:before
+				transform: translate(-50%,100%);
+			
 	
 .n-m-elem-box__text
 	font-weight: 500;
@@ -170,6 +185,8 @@ a
 	line-height: 21px;
 	white-space: nowrap;
 .drop-down-menu
+	cursor: default;
+	display none
 	position: absolute;
 	top 40px
 	right: -20px;

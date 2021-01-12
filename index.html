@@ -29,19 +29,19 @@
 					<div class="nav-menu__elem-box">
 						<a href="#" class="n-m-elem-box__text">О ПРОЕКТЕ</a>
 					</div>
-					<div class="nav-menu__elem-box with-drop-down-menu">
+					<div id="drop-down-menu" class="nav-menu__elem-box with-drop-down-menu" onclick="this.classList.toggle('open');">
 						<div class="n-m-elem-box__text">МЕНЮ</div>
-						<div class="drop-down-menu">
-							<a href="#" class="drop-down-menu__elem">
+						<div class="drop-down-menu" onclick="event.stopPropagation();">
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu').click()">
 								<div class="drop-down-menu__elem-text">ДЕНЬ В ИСТОРИИ БОЛЬШОЙ УЛИЦЫ</div>
 							</a>
-							<a href="#" class="drop-down-menu__elem">
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu').click()">
 								<div class="drop-down-menu__elem-text">ПАМЯТНИКИ И МЕМОРИАЛЬНЫЕ ДОСКИ</div>
 							</a>
-							<a href="#" class="drop-down-menu__elem">
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu').click()">
 								<div class="drop-down-menu__elem-text">ОРГАНИЗАЦИИ</div>
 							</a>
-							<a href="#" class="drop-down-menu__elem">
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu').click()">
 								<div class="drop-down-menu__elem-text">ВИДЕОГАЛЕРЕЯ</div>
 							</a>
 						</div>
