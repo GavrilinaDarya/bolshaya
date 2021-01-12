@@ -19,11 +19,13 @@ body
 	display flex
 	margin 0
 	font-family Roboto
+	font-style normal
+	font-weight: 400
+	font-size: 14px
+	color: #000000;
 	min-width 900px
 	// min-width 320px
 	min-height  480px
-	font-weight: 400
-	font-size: 14px
 	flex-direction: column;
 
 
@@ -74,7 +76,6 @@ a
 .section__head
 	padding-bottom 22px
 	border-bottom: 1px solid #C4C4C4;
-	color: #000000;
 	display: flex;
 	justify-content: space-between;
 .section__head-title
@@ -102,6 +103,8 @@ a
 	height 120px
 	.section-content 
 		margin-top 0
+		flex-direction: row;
+		overflow: visible;
 .logo-box
 	display flex
 .logo
@@ -128,6 +131,69 @@ a
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 27px;
+.nav-menu
+	display flex
+	flex 1
+	justify-content: flex-end;
+	margin auto
+.nav-menu__elem-box
+	margin auto 31px auto 31px
+	cursor pointer
+	position relative
+	// &:first-child
+	// 	margin auto 31px auto 0
+	// &:last-child
+	// 	margin auto 0 auto 31px
+	&:hover
+		.n-m-elem-box__text
+			font-weight 600
+	&.with-drop-down-menu
+		&:before
+			content ''
+			width: 14px;
+			height: 7px;
+			position: absolute;
+			bottom: -9px;
+			left 50%
+			transform: translate(-50%, 100%);
+			background url('../assets/images/arrow-top.svg')
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: senter;			
+		.n-m-elem-box__text
+			color: #929292;
+			font-weight 500
+	
+.n-m-elem-box__text
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	white-space: nowrap;
+.drop-down-menu
+	position: absolute;
+	top 40px
+	right: -20px;
+	background: rgba(255, 255, 255, 0.9);
+	min-width 316px
+	padding 18px 20px
+	box-sizing: border-box;
+.drop-down-menu__elem
+	cursor pointer
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	margin 20px 0 20 0
+	white-space: nowrap;
+	display flex
+	&:first-child
+		margin 0 0 20px 0
+	&:last-child
+		margin 20px 0 0 0
+	&:hover
+		font-weight 600
+.drop-down-menu__elem-text
+	text-align: right;
+	flex: 1;
 
 
 
