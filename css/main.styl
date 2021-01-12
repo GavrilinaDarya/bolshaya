@@ -2,12 +2,18 @@
 @import '_fonts';
 
 
+//@media screen and (max-width 768px)
 
+//@media screen and (min-width 769px) and (max-width 1024px)
+
+//@media screen and (min-width 1025px) and (max-width 1280px)
+
+//@media screen and (min-width 1281px)
 
 
 //colors
 golden = #CAAF77;
-
+dark-violet-blue = #3E5066
 
 body
 	display flex
@@ -33,3 +39,94 @@ body
 		border-radius 1.5px
 		background-color: #c1c1c1
 		cursor pointer
+
+a
+	text-decoration: none
+	color inherit
+
+
+.section
+	display: flex
+	// &.min-top
+	// 	.section-content
+	// 		margin-top 0
+		
+.section-content
+	// padding: 50px 180px 0 180px
+	margin: 70px auto 0 auto;
+	max-width: 1200px;
+	display: flex;
+	flex 1
+	flex-direction: column;
+	overflow hidden
+	&.big-bottom
+		margin-bottom: 40px
+	&.mini
+		margin: 0 auto
+	&.row
+		flex-direction: row;
+	@media screen and (min-width: 760px) and (max-width: 1300px)
+		padding: 0 50px
+	@media screen and (max-width: 760px)
+		padding: 0 20px
+
+
+.section__head
+	padding-bottom 22px
+	border-bottom: 1px solid #C4C4C4;
+	color: #000000;
+	display: flex;
+	justify-content: space-between;
+.section__head-title
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 37px;
+	margin 0
+.section__head-addition
+	display flex
+.head-addition-text
+	font-size: 14px;
+	line-height: 16px;
+	text-align: right;
+	margin auto 14px
+	&:first-child
+		margin auto 14px auto 0
+	&:last-child
+		margin auto 0 auto 14px
+
+
+
+
+
+.section.header
+	height 120px
+.section.footer
+	background dark-violet-blue
+	.section__head-title
+		font-family: Georgia;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 41px;
+		text-align: center;
+		color: #FFFFFF;
+		margin auto
+
+.section.outstanding
+	background dark-violet-blue
+	.section__head
+		border-bottom none
+		position relative
+		&:before
+			content ''
+			position absolute
+			width 107px
+			background golden
+			height 1px
+			bottom: 0;
+			left: 0;
+	.section__head-title
+		color: #FFFFFF;
+
+
+	
