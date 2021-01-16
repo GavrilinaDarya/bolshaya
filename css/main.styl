@@ -373,11 +373,14 @@ a
 .section-two-bloks__block
 	flex 1
 	margin 0 10px
+	display: flex;
+	flex-direction: column;
 	&:first-child
 		margin 0 10px 0 0
 	&:last-child
 		margin 0 0 0 10px
 .organizations-box
+	flex 1
 	margin-top 40px
 	background: #F2F2F2;
 	padding 23px 24px 33px 20px
@@ -385,6 +388,7 @@ a
 	flex-direction: column;
 	justify-content: space-between;
 .organizations-box__organization
+	margin-top 40px
 	display flex
 	margin 30px 0 0 0
 	&:first-child
@@ -409,3 +413,58 @@ a
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+
+.people-box
+	flex 1
+	background: #F2F2F2;
+	display flex
+	margin-top 40px
+	padding 20px 40px 20px 32px
+.people-box__texts
+	margin-right 40px
+	font-size: 14px;
+	line-height: 16px;
+	color: #929292;
+	.golden-bold
+		font-weight: 500;
+		color golden
+.header-text-quote
+	font-family: Georgia;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000000;
+	padding-left 70px
+	position relative
+	margin-top 10px
+	&:before
+		content '“'
+		position absolute
+		left 0
+		top 50%
+		transform translate(0, 50%)
+		color golden
+		font-family: Georgia;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 96px;
+		line-height: 20px;
+.people-box__text-main
+	margin 40px 0 20px 0
+.people-box__photos
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+.people-box__photo
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius 50%
+	margin 5px 0
+	&:first-child
+		margin 0 0 5px 0
+	&:last-child
+		margin 5px 0 0 0
