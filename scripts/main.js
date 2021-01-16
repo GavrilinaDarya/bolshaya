@@ -1,3 +1,4 @@
+// hero ->
 function createButton(index){
 	var seletedHero = document.getElementsByClassName('section-content hero open')
 	var currentHero = document.getElementsByClassName('section-content hero')[index]
@@ -16,12 +17,13 @@ function createButton(index){
 	return button;
 }
 
-
-
-
 for (var i = 0; i < document.getElementsByClassName('section-content hero').length; i++) {
 	document.getElementById('hero-switch').appendChild(createButton(i));
 }
 
 document.getElementsByClassName('section-content hero')[0].classList.add('open')
 document.getElementsByClassName('hero-switch-elem')[0].classList.add('selected')
+// <- hero
+
+
+// 
