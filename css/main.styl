@@ -494,18 +494,18 @@ a
 		margin 15px 0 0 0
 
 
-.section.day-in-history
+.section.day-history
 	.section-content
 		overflow: visible;	
 
-.day-in-history-box
+.day-history-box
 	display flex
-.day-in-history__left-block
+.day-history__left-block
 	flex 2
-.day-in-history__right-block
+.day-history__right-block
 	flex 1
 	margin-left 45px
-.day-in-history__data-box
+.day-history__data-box
 	display flex
 	.data-box__val
 		margin-top 20px
@@ -522,7 +522,7 @@ a
 		margin: auto 0 1px 12px;
 		cursor pointer
 
-.day-in-history__info-box
+.day-history__info-box
 	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2)
 	padding 43px 35px 0 35px
 	display flex
@@ -597,3 +597,24 @@ a
 			&.share
 				&:before
 					background-image url('../assets/images/arrow-forvard.svg')
+
+
+.day-history__section-label
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	padding-left 44px
+	position relative
+	margin 25px 0 7px 0
+	&:before
+		content ''
+		position absolute
+		height 17px
+		width 17px
+		left 30px
+		top: 50%;
+		transform: translate(-50%,-50%);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image url('../assets/images/day-history__section-label.svg')
