@@ -256,13 +256,15 @@ a
 		margin 50px auto 70px auto
 		display flex
 		.social-links__elem
-			height 24px
-			width 24px
+			height 32px
+			width 32px
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
 			margin 0 12px
 			display: block;
+			&:hover
+				filter: drop-shadow(2px 4px 4px black);
 			&.telegram
 				background-image url('../assets/images/socials/telegram.svg')
 			&.vk
@@ -281,7 +283,9 @@ a
 				background-image url('../assets/images/socials/viber.svg')
 			&.whatsapp
 				background-image url('../assets/images/socials/whatsapp.svg')
-
+.footer__menu-box
+	display: flex;
+	flex-direction: column;
 
 .section.outstanding
 	background dark-violet-blue
@@ -523,10 +527,13 @@ a
 	background-position: center;
 	border-radius 50%
 	margin 5px 0
+	cursor pointer
 	&:first-child
 		margin 0 0 5px 0
 	&:last-child
 		margin 5px 0 0 0
+	&.selected
+		border: 2px solid #DAC290;
 
 
 
