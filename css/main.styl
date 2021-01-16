@@ -459,6 +459,7 @@ a
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-left 20px
 .people-box__photo
 	width: 100px;
 	height: 100px;
@@ -491,3 +492,99 @@ a
 		margin 0 0 15px 0
 	&:last-child
 		margin 15px 0 0 0
+
+
+.section.day-in-history
+	.section-content
+		overflow: visible;	
+
+.day-in-history-box
+	display flex
+.day-in-history__left-block
+	flex 2
+.day-in-history__right-block
+	flex 1
+	margin-left 45px
+.day-in-history__data-box
+	display flex
+	.data-box__val
+		margin-top 20px
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 28px;
+	.data-box__icon
+		width 25px
+		height 25px
+		background url('../assets/images/calendar.svg')
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: auto 0 1px 12px;
+		cursor pointer
+
+.day-in-history__info-box
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2)
+	padding 43px 35px 0 35px
+	display flex
+	flex-direction column
+	margin 15px 0
+	.info-box__title
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+	.info-box__text
+		font-size: 12px;
+		line-height: 14px;
+		margin 24px 0		
+	.info-box__last-likes
+		font-size: 12px;
+		line-height: 14px;
+		color: #929292;
+		margin-bottom 18px
+		position relative
+		padding-left 44px
+		&:before
+			content ''
+			position absolute
+			height 18px
+			width 18px
+			left 30px
+			top: 50%;
+			transform: translate(-50%,-50%);
+			background url('../assets/images/like.svg')
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;		
+	.info-box__communicatios
+		margin 0 0 18px 0
+		padding-top 18px
+		border-top: 1px solid #E5E5E5;
+		display flex
+		justify-content: space-between;		
+		.info-box-communications__elem
+			font-size: 12px;
+			line-height: 14px;
+			color: #929292;
+			cursor pointer
+			padding-left 44px
+			position relative
+			&:before
+				content ''
+				position absolute
+				height 17px
+				width 17px
+				left 30px
+				top: 50%;
+				transform: translate(-50%,-50%);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+			&.like
+				&:before
+					background-image url('../assets/images/heart.svg')
+			&.comment
+				&:before
+					background-image url('../assets/images/comment.svg')
+			&.share
+				&:before
+					background-image url('../assets/images/arrow-forvard.svg')
