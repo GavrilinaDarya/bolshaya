@@ -505,6 +505,9 @@ a
 .day-history__right-block
 	flex 1
 	margin-left 45px
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
 .day-history__data-box
 	display flex
 	.data-box__val
@@ -620,8 +623,38 @@ a
 		background-image url('../assets/images/day-history__section-label.svg')
 
 .online-camera-box
-	// width: 400px;
 	height: 265px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+
+
+.magazine-elem
+	margin 0 0 20px 0
+	&:last-child
+		margin 0
+.day-history__magazine
+	flex 1
+	background: #F2F2F2;
+	padding 13px 20px
+	font-size: 12px;
+	line-height: 14px;
+.magazine-elem__people-info
+	display flex
+.magazine-elem-people-info__photo
+	height 25px
+	width 25px
+	border: 0.5px solid #929292;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+.magazine-elem-people-info__name
+	font-weight: 500;
+	margin: auto 0 auto 5px
+.magazine-elem-people-info__data
+	color: #929292;
+	margin auto 0 auto 5px
+.magazine-elem__text
+	margin 10px 0
+.magazine-elem__tag
+	font-weight 500
