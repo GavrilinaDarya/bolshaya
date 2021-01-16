@@ -15,6 +15,33 @@
 golden = #CAAF77;
 dark-violet-blue = #3E5066
 
+.scroll-box
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-width 20px
+	&.left
+		margin-right 20px
+	&.right
+		margin-left 20px
+.scroll-box__top, .scroll-box__bottom
+	width 20px
+	height 10px
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor pointer
+	&:hover
+		filter: brightness(0.5)
+.scroll-box__top
+	background-image url('../assets/images/arrow-top.svg')
+.scroll-box__bottom
+	transform rotate(180deg)
+	background-image url('../assets/images/arrow-top.svg')
+	
+
+
+
 body
 	display flex
 	margin 0
@@ -540,6 +567,9 @@ a
 .section.chronicle
 	.section__head
 		margin-bottom 40px
+.chronicle-texts
+	display: flex;
+	flex-direction: column;
 .chronicle-box
 	display flex
 	flex-direction: row;
@@ -554,6 +584,46 @@ a
 		margin 0 0 15px 0
 	&:last-child
 		margin 15px 0 0 0
+.chronicle-line-box
+	display flex
+	flex 1
+	margin-top 24px
+	.scroll-box__top, .scroll-box__bottom
+		&:hover
+			filter: brightness(2)
+.chronicle-lines
+	display flex
+	flex-direction column
+	padding-bottom 24px
+	position relative
+	&:before
+		content ''
+		width 2px
+		height 100%
+		position absolute
+		background golden
+		left 45px
+		top 0
+.chronicle-line
+	display flex
+	margin-top 24px 
+.chronicle-line__year
+	margin-right 40px
+.chronicle-line__info
+	display flex
+	flex-direction column
+.chronicle-line__info-title
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color #FFFFFF
+// .chronicle-line__info-text
+	
+
+
+
+
+
 
 
 .section.day-history
@@ -563,7 +633,11 @@ a
 .day-history-box
 	display flex
 .day-history__left-block
+	display flex
 	flex 2
+	.scroll-box
+		margin-top 80px
+		margin-bottom 15px
 .day-history__right-block
 	flex 1
 	margin-left 45px
