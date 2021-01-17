@@ -99,3 +99,116 @@ function changeFirstChronicleVal(n){
 	}	
 }
 // <- chronicle
+
+
+
+
+// day-history ->
+const historyDays = [
+	{
+		"title":"В 2009 году на улице Карла Маркса появились аншлаги с ее историческим названием",
+		"decription":"В 1726 году по указанию Саввы Рагузинского посад в Иркутске был обнесён валом с палисадом и рвом, которые тянулись от протоки реки Ангары до реки Ушаковки. К 1760 году палисад обветшал, ров частично осыпался. По решению магистрата остатки укреплений были уничтожены, на их месте была проложена новая улица, которая получила название — Большая Першпективная, в просторечии — Большая.",
+		"permalink":"#",
+
+		"lastLike":"Кирилл Сечкарь, Евгений Борисов и еще 113",
+		"comment":"20",
+		"share":"52"
+	},
+	{
+		"title":"В 2010 году на улице Карла Маркса появились аншлаги с ее историческим названием",
+		"decription":"В 1726 году по указанию Саввы Рагузинского посад в Иркутске был обнесён валом с палисадом и рвом, которые тянулись от протоки реки Ангары до реки Ушаковки. К 1760 году палисад обветшал, ров частично осыпался. По решению магистрата остатки укреплений были уничтожены, на их месте была проложена новая улица, которая получила название — Большая Першпективная, в просторечии — Большая.",
+		"permalink":"#",
+
+		"lastLike":"Кирилл Сечкарь, Евгений Борисов и еще 113",
+		"comment":"20",
+		"share":"52"
+	},
+	{
+		"title":"В 2011 году на улице Карла Маркса появились аншлаги с ее историческим названием",
+		"decription":"В 1726 году по указанию Саввы Рагузинского посад в Иркутске был обнесён валом с палисадом и рвом, которые тянулись от протоки реки Ангары до реки Ушаковки. К 1760 году палисад обветшал, ров частично осыпался. По решению магистрата остатки укреплений были уничтожены, на их месте была проложена новая улица, которая получила название — Большая Першпективная, в просторечии — Большая.",
+		"permalink":"#",
+
+		"lastLike":"Кирилл Сечкарь, Евгений Борисов и еще 113",
+		"comment":"20",
+		"share":"52"
+	},
+	{
+		"title":"В 2012 году на улице Карла Маркса появились аншлаги с ее историческим названием",
+		"decription":"В 1726 году по указанию Саввы Рагузинского посад в Иркутске был обнесён валом с палисадом и рвом, которые тянулись от протоки реки Ангары до реки Ушаковки. К 1760 году палисад обветшал, ров частично осыпался. По решению магистрата остатки укреплений были уничтожены, на их месте была проложена новая улица, которая получила название — Большая Першпективная, в просторечии — Большая.",
+		"permalink":"#",
+
+		"lastLike":"Кирилл Сечкарь, Евгений Борисов и еще 113",
+		"comment":"20",
+		"share":"52"
+	},
+	{
+		"title":"В 2013 году на улице Карла Маркса появились аншлаги с ее историческим названием",
+		"decription":"В 1726 году по указанию Саввы Рагузинского посад в Иркутске был обнесён валом с палисадом и рвом, которые тянулись от протоки реки Ангары до реки Ушаковки. К 1760 году палисад обветшал, ров частично осыпался. По решению магистрата остатки укреплений были уничтожены, на их месте была проложена новая улица, которая получила название — Большая Першпективная, в просторечии — Большая.",
+		"permalink":"#",
+
+		"lastLike":"Кирилл Сечкарь, Евгений Борисов и еще 113",
+		"comment":"20",
+		"share":"52"
+	}
+]
+
+function createDayHistory(elem){	
+	var divBox		  = document.createElement('div');
+	divBox.className  = 'day-history__info-box';
+
+	var divTitle 		 	= document.createElement('div');
+	divTitle.className    	= 'info-box__title';
+	divTitle.innerText  	= elem.title;
+
+	var divText 			= document.createElement('div');
+	divText.className    	= 'info-box__text';
+	divText.innerText  		= elem.decription;
+	
+	var divLastLike 		= document.createElement('div');
+	divLastLike.className  	= 'info-box__last-likes';
+	divLastLike.innerText	= elem.title
+
+	
+	var divCommunicatios	= document.createElement('div');
+	divCommunicatios.className   = 'info-box__communicatios';
+
+	var divLike 		= document.createElement('div');
+	divLike.className  	= 'info-box-communications__elem like';
+	divLike.innerText	= "Мне нравится"
+
+	var divComment 			= document.createElement('div');
+	divComment.className  	= 'info-box-communications__elem comment';
+	divComment.innerText	= `${elem.comment} Комментировать`
+
+	var divShare		= document.createElement('div');
+	divShare.className  = 'info-box-communications__elem share';
+	divShare.innerText	= `${elem.share} Поделиться`
+
+
+	divCommunicatios.appendChild(divLike);
+	divCommunicatios.appendChild(divComment);
+	divCommunicatios.appendChild(divShare);
+
+	divBox.appendChild(divTitle)
+	divBox.appendChild(divText)
+	divBox.appendChild(divLastLike)
+	divBox.appendChild(divCommunicatios)
+
+	return divBox;
+}
+
+var firstHistoryDaysVal = 0
+document.getElementById('day-history__data-box--js').appendChild(createDayHistory(historyDays[firstChronicleVal]));
+document.getElementById('day-history__data-box--js').appendChild(createDayHistory(historyDays[firstChronicleVal + 1]));
+document.getElementById('day-history__data-box--js').appendChild(createDayHistory(historyDays[firstChronicleVal + 2]));
+
+function changeFirstHistoryDaysVal(n){
+	if (firstHistoryDaysVal + n >= 0 && firstHistoryDaysVal + n <= historyDays.length - 3){
+		firstHistoryDaysVal = firstHistoryDaysVal + n;
+		document.getElementById('day-history__data-box--js').replaceChild(createDayHistory(historyDays[firstHistoryDaysVal]), document.getElementsByClassName('day-history__info-box')[0])
+		document.getElementById('day-history__data-box--js').replaceChild(createDayHistory(historyDays[firstHistoryDaysVal + 1]), document.getElementsByClassName('day-history__info-box')[1])
+		document.getElementById('day-history__data-box--js').replaceChild(createDayHistory(historyDays[firstHistoryDaysVal + 2]), document.getElementsByClassName('day-history__info-box')[2])
+	}	
+}
+
+// <- day-history

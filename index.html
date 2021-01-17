@@ -135,13 +135,14 @@
 				</div>
 				<div class="day-history-box">
 					<div class="day-history__left-block">
-						<div>							
+						<div id="day-history__data-box--js">							
 							<div class="day-history__data-box">
 								<div class="data-box__val">5 января</div>
 								<div class="data-box__icon"></div>
 							</div>
 
-							<div class="day-history__info-box">
+							
+							<!-- <div class="day-history__info-box">
 								<div class="info-box__title">
 									В 2009 году на улице Карла Маркса появились аншлаги с ее историческим названием
 								</div>
@@ -154,27 +155,13 @@
 									<div class="info-box-communications__elem comment">20 Комментировать</div>
 									<div class="info-box-communications__elem share">52 Поделиться</div>
 								</div>								
-							</div>
+							</div> -->
 
-							<div class="day-history__info-box">
-								<div class="info-box__title">
-									В 2009 году на улице Карла Маркса появились аншлаги с ее историческим названием
-								</div>
-								<div class="info-box__text">
-									В 1726 году по указанию Саввы Рагузинского посад в Иркутске был обнесён валом с палисадом и рвом, которые тянулись от протоки реки Ангары до реки Ушаковки. К 1760 году палисад обветшал, ров частично осыпался. По решению магистрата остатки укреплений были уничтожены, на их месте была проложена новая улица, которая получила название — Большая Першпективная, в просторечии — Большая.
-								</div>
-								<div class="info-box__last-likes">Кирилл Сечкарь, Евгений Борисов и еще 113</div>
-								<div class="info-box__communicatios">
-									<div class="info-box-communications__elem like">Мне нравится</div>
-									<div class="info-box-communications__elem comment">20 Комментировать</div>
-									<div class="info-box-communications__elem share">52 Поделиться</div>
-								</div>								
-							</div>
 						</div>
 
 						<div class="scroll-box right">
-							<div class="scroll-box__top"></div>
-							<div class="scroll-box__bottom"></div>							
+							<div class="scroll-box__top" onclick="changeFirstHistoryDaysVal(-1)"></div>
+							<div class="scroll-box__bottom" onclick="changeFirstHistoryDaysVal(1)"></div>							
 						</div>
 
 					</div>
