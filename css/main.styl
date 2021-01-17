@@ -163,6 +163,8 @@ a
 	flex 1
 	justify-content: flex-end;
 	margin auto
+	@media screen and (max-width 768px)
+		display none
 .nav-menu__elem-box
 	margin auto 31px auto 31px
 	cursor pointer
@@ -257,12 +259,18 @@ a
 	.main-menu-links
 		display flex
 		margin 54px auto 66px auto
+		@media screen and (max-width 768px)
+			flex-direction column
+			margin 0
+			flex 1
 		.main-menu-links__elem
 			font-weight: 500;
 			font-size: 18px;
 			line-height: 21px;
 			color: #FFFFFF;
 			margin 0 25px
+			@media screen and (max-width 768px)
+				margin 5px 0
 			&:hover
 				font-weight 600
 	.extra-menu-links
@@ -271,16 +279,27 @@ a
 		border-top 1px solid #C4C4C4
 		border-bottom 1px solid #C4C4C4
 		justify-content: space-between;
+		@media screen and (max-width 768px)
+			flex-direction column
+			border none
+			padding 0
+			flex 1
 		.extra-menu-links__elem
 			font-weight: 500;
 			font-size: 18px;
 			line-height: 110%;
 			color: #C4C4C4;
+			@media screen and (max-width 768px)
+				margin 5px 0
 			&:hover
 				font-weight 600
 	.social-links
 		margin 50px auto 70px auto
 		display flex
+		@media screen and (max-width 768px)
+			flex-wrap: wrap;
+			justify-content: center;
+			max-width: 70vw;
 		.social-links__elem
 			height 32px
 			width 32px
@@ -312,6 +331,8 @@ a
 .footer__menu-box
 	display: flex;
 	flex-direction: column;
+	@media screen and (max-width 768px)
+		flex-direction row
 
 .section.outstanding
 	background dark-violet-blue
@@ -335,6 +356,8 @@ a
 .section.hero
 	height: 350px;
 	position relative
+	@media screen and (max-width 768px)
+		display none
 	.section-content
 		margin-top 0
 		background-size: cover;
@@ -386,7 +409,9 @@ a
 	&.selected
 		opacity 1
 
-
+.section.monuments-and-memorial-plaques
+	@media screen and (max-width 768px)
+		display none
 .grid-images
 	margin-top 50px
 	display flex
@@ -453,7 +478,9 @@ a
 					left 0
 
 
-// .section.two
+.section.organizations-people
+	@media screen and (max-width 768px)
+		display none
 .section-two-bloks
 	display flex
 	flex-direction: row;
@@ -548,6 +575,8 @@ a
 	flex-direction: column;
 	justify-content: space-between;
 	margin-left 20px
+	@media screen and (max-width 768px)
+		display none
 .people-box__photo
 	width: 100px;
 	height: 100px;
@@ -636,18 +665,35 @@ a
 
 .day-history-box
 	display flex
+	@media screen and (max-width 768px)
+		flex-direction: column;
 .day-history__left-block
 	display flex
 	flex 2
+	position relative
 	.scroll-box
 		margin-top 80px
 		margin-bottom 15px
+		@media screen and (max-width 768px)
+			position: absolute;
+			height: calc(100% - 45px);
+			top: -25px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			margin-left: 0;
+	
 .day-history__right-block
 	flex 1
 	margin-left 45px
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 15px;
+	@media screen and (max-width 768px)
+		margin-left 0
+.online-camera
+	@media screen and (max-width 768px)
+		display none
+		
 .day-history__data-box
 	display flex
 	.data-box__val
@@ -664,6 +710,7 @@ a
 		background-position: center;
 		margin: auto 0 1px 12px;
 		cursor pointer
+	
 
 .day-history__info-box
 	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2)
@@ -717,6 +764,10 @@ a
 			cursor pointer
 			padding-left 44px
 			position relative
+			@media screen and (max-width 768px)
+				max-width: 10px;
+				overflow: hidden;
+				color: transparent;
 			&:before
 				content ''
 				position absolute
@@ -804,6 +855,8 @@ a
 
 
 .section.video-gallery
+	@media screen and (max-width 768px)
+		display none
 	.section-content
 		margin-top 60px
 		margin-bottom 70px
