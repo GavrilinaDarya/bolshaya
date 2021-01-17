@@ -156,9 +156,11 @@ function createDayHistory(elem){
 	var divBox		  = document.createElement('div');
 	divBox.className  = 'day-history__info-box';
 
-	var divTitle 		 	= document.createElement('div');
-	divTitle.className    	= 'info-box__title';
-	divTitle.innerText  	= elem.title;
+	var aTitle 		 	= document.createElement('a');
+	aTitle.className    = 'info-box__title';
+	aTitle.innerText  	= elem.title;
+	aTitle.setAttribute('href',elem.permalink);
+
 
 	var divText 			= document.createElement('div');
 	divText.className    	= 'info-box__text';
@@ -189,7 +191,7 @@ function createDayHistory(elem){
 	divCommunicatios.appendChild(divComment);
 	divCommunicatios.appendChild(divShare);
 
-	divBox.appendChild(divTitle)
+	divBox.appendChild(aTitle)
 	divBox.appendChild(divText)
 	divBox.appendChild(divLastLike)
 	divBox.appendChild(divCommunicatios)
