@@ -191,8 +191,41 @@ a
 	margin auto
 	@media screen and (max-width 768px)
 		display none
-	// @media screen and (min-width 768px) and (max-width 1200px)
+	&.mobile
+		.nav-menu__elem-box
+			margin-right 0
+			&.with-drop-down-menu
+				&:before
+					display none
+		.drop-down-menu
+			width: 100%;
+			min-width: 100vw;
+			// right: -50px;
+			background: #3E5066;
+			color #FFFFFF
+			.drop-down-menu__elem
+				margin 10px 0
+				white-space: nowrap;
+				display flex
+				&:first-child
+					margin 0 0 10px 0
+				&:last-child
+					margin 10px 0 0 0
+			.drop-down-menu__elem-text
+				text-align: left;
+		@media screen and (max-width 768px)
+			display flex
+		@media screen and (min-width 768px)
+			display none
 		
+	// @media screen and (min-width 768px) and (max-width 1200px)
+.nav-menu-icon--mobile
+	height 14px
+	width 18px
+	background url('../assets/images/menu.svg')
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 .nav-menu__elem-box
 	margin auto 31px auto 31px
 	cursor pointer
@@ -375,14 +408,14 @@ a
 	background dark-violet-blue
 	color #BFBFC0
 	.section-content
-		@media screen and (max-width 768px)
+		@media screen and (max-width 1200px)
 			margin-top 13px
 			margin-bottom 20px
 	.section__head
 		border-bottom none
 		position relative
 		margin-bottom 40px
-		@media screen and (max-width 768px)
+		@media screen and (max-width 1200px)
 			margin-bottom 17px
 			padding-bottom 7px
 		&:before
