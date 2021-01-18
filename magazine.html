@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon"/>
+		<script src="./scripts/main.js" defer=""></script>
+		<link rel="stylesheet" href="./css/main.css"></link>
+	</head>
+	<body>
+		<div class="section header">
+			<div class="section-content">
+				<div class="logo-box">
+					<div class="logo"></div>
+					<div class="logo-text">
+						<div class="logo-text--1">Улица</div>
+						<div class="logo-text--2">Большая</div>						
+					</div>
+				</div>
+				<div class="nav-menu">
+					<div class="nav-menu__elem-box">
+						<a href="#" class="n-m-elem-box__text">ЖУРНАЛ</a>
+					</div>
+					<div class="nav-menu__elem-box">
+						<a href="#" class="n-m-elem-box__text">ХРОНИКА</a>
+					</div>
+					<div class="nav-menu__elem-box">
+						<a href="#" class="n-m-elem-box__text">ПРОГУЛКА</a>
+					</div>
+					<div class="nav-menu__elem-box">
+						<a href="#" class="n-m-elem-box__text">О ПРОЕКТЕ</a>
+					</div>
+					<div id="drop-down-menu" class="nav-menu__elem-box with-drop-down-menu" onclick="this.classList.toggle('open');">
+						<div class="n-m-elem-box__text">МЕНЮ</div>
+						<div class="drop-down-menu" onclick="event.stopPropagation();">
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu').click()">
+								<div class="drop-down-menu__elem-text">ДЕНЬ В ИСТОРИИ БОЛЬШОЙ УЛИЦЫ</div>
+							</a>
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu').click()">
+								<div class="drop-down-menu__elem-text">ПАМЯТНИКИ И МЕМОРИАЛЬНЫЕ ДОСКИ</div>
+							</a>
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu').click()">
+								<div class="drop-down-menu__elem-text">ОРГАНИЗАЦИИ</div>
+							</a>
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu').click()">
+								<div class="drop-down-menu__elem-text">ВИДЕОГАЛЕРЕЯ</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="nav-menu mobile">
+					<div class="n-m-elem-box__text"></div>
+					<div id="drop-down-menu-mobile" class="nav-menu__elem-box with-drop-down-menu" onclick="this.classList.toggle('open');">
+						<div class="n-m-elem-box__text"><div class="nav-menu-icon--mobile"></div></div>
+						<div class="drop-down-menu" onclick="event.stopPropagation();">
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu-mobile').click()">
+								<div class="drop-down-menu__elem-text">ПРОГУЛКА</div>
+							</a>
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu-mobile').click()">
+								<div class="drop-down-menu__elem-text">ХРОНИКА</div>
+							</a>
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu-mobile').click()">
+								<div class="drop-down-menu__elem-text">ДЕНЬ В ИСТОРИИ УЛИЦЫ БОЛЬШОЙ</div>
+							</a>
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu-mobile').click()">
+								<div class="drop-down-menu__elem-text">ЖУРНАЛ</div>
+							</a>
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu-mobile').click()">
+								<div class="drop-down-menu__elem-text">КОМАНДА</div>
+							</a>
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu-mobile').click()">
+								<div class="drop-down-menu__elem-text">О ПРОЕКТЕ</div>
+							</a>
+							<a href="#" class="drop-down-menu__elem" onclick="document.getElementById('drop-down-menu-mobile').click()">
+								<div class="drop-down-menu__elem-text">ОБРАТНАЯ СВЯЗЬ</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="section-content ">
+				<div class="section__head">
+					<h1 class="section__head-title">Журнал</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="section footer">
+			<div class="section-content ">
+				<div class="section__head">
+					<h1 class="section__head-title">Проект улица Большая, Иркутск</h1>
+				</div>
+
+				<div class="footer__menu-box">
+					<div class="main-menu-links">
+						<a href="#" class="main-menu-links__elem">ЖУРНАЛ</a>
+						<a href="#" class="main-menu-links__elem">ХРОНИКА</a>
+						<a href="#" class="main-menu-links__elem">ПРОГУЛКА</a>
+						<a href="#" class="main-menu-links__elem">О ПРОЕКТЕ</a>
+						<a href="#" class="main-menu-links__elem">ОБРАТНАЯ СВЯЗЬ</a>			
+					</div>
+
+
+					<div class="extra-menu-links">
+						<a href="" class="extra-menu-links__elem">ДЕНЬ В ИСТОРИИ <br> БОЛЬШОЙ УЛИЦЫ</a>
+						<a href="" class="extra-menu-links__elem">ПАМЯТНИКИ И <br> МЕМОРИАЛЬНЫЕ ДОСКИ</a>
+						<a href="" class="extra-menu-links__elem">ВИДЕОГАЛЕРЕЯ</a>
+						<a href="" class="extra-menu-links__elem">КОМАНДА</a>		
+					</div>
+				</div>
+
+				<div class="social-links">
+					<a href="#" target="_blank" class="social-links__elem telegram"></a>	
+					<a href="#" target="_blank" class="social-links__elem vk"></a>	
+					<a href="#" target="_blank" class="social-links__elem instagram"></a>	
+					<a href="#" target="_blank" class="social-links__elem twitter"></a>	
+					<a href="#" target="_blank" class="social-links__elem facebook"></a>	
+					<a href="#" target="_blank" class="social-links__elem ok"></a>	
+					<a href="#" target="_blank" class="social-links__elem youtube"></a>
+					<a href="#" target="_blank" class="social-links__elem viber"></a>
+					<a href="#" target="_blank" class="social-links__elem whatsapp"></a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
