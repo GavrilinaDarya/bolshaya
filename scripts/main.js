@@ -168,7 +168,7 @@ function createDayHistory(elem){
 	
 	var divLastLike 		= document.createElement('div');
 	divLastLike.className  	= 'info-box__last-likes';
-	divLastLike.innerText	= elem.title
+	divLastLike.innerText	= elem.lastLike
 
 	
 	var divCommunicatios	= document.createElement('div');

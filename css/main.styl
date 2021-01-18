@@ -54,6 +54,9 @@ body
 	min-width 320px
 	min-height  480px
 	flex-direction: column;
+	@media screen and (max-width: 768px)
+		font-size: 12px;
+		line-height: 14px;
 
 
 *
@@ -110,6 +113,10 @@ a
 	font-size: 32px;
 	line-height: 37px;
 	margin 0
+	@media screen and (max-width: 768px)
+		font-size: 18px;
+		line-height: 21px;
+	
 .section__head-addition
 	display flex
 .head-addition-text
@@ -117,6 +124,8 @@ a
 	line-height: 16px;
 	text-align: right;
 	margin auto 14px
+	@media screen and (max-width: 768px)
+		display none	
 	&:first-child
 		margin auto 14px auto 0
 	&:last-child
@@ -128,6 +137,10 @@ a
 
 .section.header
 	height 120px
+	@media screen and (max-width: 768px)
+		height 60px
+	@media screen and (min-width: 768px) and (max-width: 1200px)
+		height 80px
 	.section-content 
 		margin-top 0
 		flex-direction: row;
@@ -142,22 +155,35 @@ a
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+	@media screen and (max-width: 1200px)
+		width: 100px;
+		height: 60px;
+		margin 0
+	
 .logo-text
 	display flex
 	flex-direction column
 	margin-top 48px
+	@media screen and (max-width: 1200px)
+		margin-top 25px
 .logo-text--1
 	font-family: Georgia;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 20px;
+	@media screen and (max-width: 1200px)
+		font-size: 12px;
+		line-height: 14px;
 .logo-text--2
 	font-family: Georgia;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 27px;
+	@media screen and (max-width: 768px)
+		font-size: 16px;
+		line-height: 18px;
 .nav-menu
 	display flex
 	flex 1
@@ -165,6 +191,8 @@ a
 	margin auto
 	@media screen and (max-width 768px)
 		display none
+	// @media screen and (min-width 768px) and (max-width 1200px)
+		
 .nav-menu__elem-box
 	margin auto 31px auto 31px
 	cursor pointer
@@ -173,6 +201,8 @@ a
 	// 	margin auto 31px auto 0
 	// &:last-child
 	// 	margin auto 0 auto 31px
+	@media screen and (min-width 768px) and (max-width 1200px)
+		margin auto 10px
 	&:hover
 		.n-m-elem-box__text
 			font-weight 600
@@ -254,6 +284,9 @@ a
 		text-align: center;
 		color: #FFFFFF;
 		margin auto
+		@media screen and (max-width 768px)
+			font-size: 18px;
+			line-height: 20px;
 	.section__head
 		border none
 	.main-menu-links
@@ -270,6 +303,8 @@ a
 			color: #FFFFFF;
 			margin 0 25px
 			@media screen and (max-width 768px)
+				font-size: 12px;
+				line-height: 14px;
 				margin 5px 0
 			&:hover
 				font-weight 600
@@ -290,6 +325,8 @@ a
 			line-height: 110%;
 			color: #C4C4C4;
 			@media screen and (max-width 768px)
+				font-size: 12px;
+				line-height: 14px;
 				margin 5px 0
 			&:hover
 				font-weight 600
@@ -299,7 +336,7 @@ a
 		@media screen and (max-width 768px)
 			flex-wrap: wrap;
 			justify-content: center;
-			max-width: 70vw;
+			max-width: 80vw;
 		.social-links__elem
 			height 32px
 			width 32px
@@ -337,9 +374,17 @@ a
 .section.outstanding
 	background dark-violet-blue
 	color #BFBFC0
+	.section-content
+		@media screen and (max-width 768px)
+			margin-top 13px
+			margin-bottom 20px
 	.section__head
 		border-bottom none
 		position relative
+		margin-bottom 40px
+		@media screen and (max-width 768px)
+			margin-bottom 17px
+			padding-bottom 7px
 		&:before
 			content ''
 			position absolute
@@ -435,6 +480,9 @@ a
 		height: 280px;
 		margin 10px
 		position relative
+		@media screen and (min-width 768px) and (max-width 1200px)
+			width 180px
+			height 180px		
 		.grid-images__title
 			display none
 		&:hover
@@ -481,6 +529,11 @@ a
 .section.organizations-people
 	@media screen and (max-width 768px)
 		display none
+	.section-content
+		@media screen and (min-width 768px) and (max-width 1200px)
+			flex-direction column
+			.section-two-bloks__block
+				margin 70px 0 0 0
 .section-two-bloks
 	display flex
 	flex-direction: row;
@@ -577,6 +630,10 @@ a
 	margin-left 20px
 	@media screen and (max-width 768px)
 		display none
+.chronicle-photos
+	@media screen and (min-width 768px) and (max-width 1200px)
+		display none
+	
 .people-box__photo
 	width: 100px;
 	height: 100px;
@@ -595,9 +652,7 @@ a
 
 
 
-.section.chronicle
-	.section__head
-		margin-bottom 40px
+
 .chronicle-texts
 	display: flex;
 	flex-direction: column;
@@ -665,7 +720,7 @@ a
 
 .day-history-box
 	display flex
-	@media screen and (max-width 768px)
+	@media screen and (max-width 1200px)
 		flex-direction: column;
 .day-history__left-block
 	display flex
@@ -688,7 +743,7 @@ a
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 15px;
-	@media screen and (max-width 768px)
+	@media screen and (max-width 1200px)
 		margin-left 0
 .online-camera
 	@media screen and (max-width 768px)
@@ -701,6 +756,9 @@ a
 		font-weight: 500;
 		font-size: 24px;
 		line-height: 28px;
+		@media screen and (max-width 768px)
+			font-size: 18px;
+			line-height: 21px;
 	.data-box__icon
 		width 25px
 		height 25px
