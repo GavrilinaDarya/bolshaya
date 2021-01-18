@@ -376,34 +376,34 @@ a
 			justify-content: center;
 			max-width: 80vw;
 			margin-bottom 20px
-		.social-links__elem
-			height 32px
-			width 32px
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
-			margin 0 12px
-			display: block;
-			&:hover
-				filter: drop-shadow(2px 4px 4px black);
-			&.telegram
-				background-image url('../assets/images/socials/telegram.svg')
-			&.vk
-				background-image url('../assets/images/socials/vk.svg')
-			&.instagram
-				background-image url('../assets/images/socials/instagram.svg')
-			&.twitter
-				background-image url('../assets/images/socials/twitter.svg')
-			&.facebook
-				background-image url('../assets/images/socials/facebook.svg')
-			&.ok
-				background-image url('../assets/images/socials/ok.svg')
-			&.youtube
-				background-image url('../assets/images/socials/youtube.svg')
-			&.viber
-				background-image url('../assets/images/socials/viber.svg')
-			&.whatsapp
-				background-image url('../assets/images/socials/whatsapp.svg')
+.social-links__elem
+	height 32px
+	width 32px
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin 0 12px
+	display: block;
+	&:hover
+		filter: drop-shadow(2px 4px 4px black);
+	&.telegram
+		background-image url('../assets/images/socials/telegram.svg')
+	&.vk
+		background-image url('../assets/images/socials/vk.svg')
+	&.instagram
+		background-image url('../assets/images/socials/instagram.svg')
+	&.twitter
+		background-image url('../assets/images/socials/twitter.svg')
+	&.facebook
+		background-image url('../assets/images/socials/facebook.svg')
+	&.ok
+		background-image url('../assets/images/socials/ok.svg')
+	&.youtube
+		background-image url('../assets/images/socials/youtube.svg')
+	&.viber
+		background-image url('../assets/images/socials/viber.svg')
+	&.whatsapp
+		background-image url('../assets/images/socials/whatsapp.svg')
 .footer__menu-box
 	display: flex;
 	flex-direction: column;
@@ -996,3 +996,51 @@ a
 	&:hover
 		background golden
 		color #FFFFFF
+
+
+
+.page-level-2-box
+	p
+		font-size: 18px;
+		line-height: 29px;
+		margin 30px 0
+		@media screen and (max-width 768px)
+			font-size: 14px;
+			line-height: 20px;
+
+
+
+.tell-friends
+	display flex
+	margin: 0 0 40px auto;
+.tell-friends__text
+	margin auto 8px auto 0
+	font-size: 14px;
+	line-height: 16px;
+	color: #727272;
+.tell-friends__icons
+	display flex
+	.social-links__elem
+		margin auto 5px
+		width 20px
+		height 20px
+		&.vk
+			background-image url('../assets/images/socials/vk-2.svg')
+		&.instagram
+			background-image url('../assets/images/socials/instagram-2.svg')
+		&.facebook
+			background-image url('../assets/images/socials/facebook-2.svg')
+		&:hover
+			filter: drop-shadow(0px 0px 1px #3e5066);
+.go-top-icon
+	margin auto 0 auto 40px
+	width 25px
+	height 25px
+	background-image url('../assets/images/go-top.svg')
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor pointer
+	&:hover
+		filter: drop-shadow(0px 0px 1px #3e5066);
+	
