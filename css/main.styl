@@ -23,6 +23,26 @@ dark-violet-blue = #3E5066
 		margin-right 20px
 	&.right
 		margin-left 20px
+	&.line
+		z-index: 1;
+		flex-direction: row;
+		position: absolute;
+		width: 100%;
+		top: 4px;
+		.scroll-box__top
+			transform rotate(-90deg)
+			margin-left: -5px;
+			// position relative
+			// &:before
+			// 	content ''
+			// 	position absolute
+			// 	height 20px
+			// 	width 20px
+			// 	background: linear-gradient(-180deg, red, transparent);
+		.scroll-box__bottom
+			transform rotate(90deg)
+			margin-right: -5px;
+		
 .scroll-box__top, .scroll-box__bottom
 	width 20px
 	height 10px
@@ -1053,7 +1073,9 @@ a
 	&:hover
 		filter: drop-shadow(0px 0px 1px #3e5066);
 
-
+.walk-street
+	position relative
+	margin 25px 0
 .walk-street-imges-box
 	display flex
 	transform: translate(-10px,0);
@@ -1162,3 +1184,107 @@ a
 		font-weight 500
 	@media screen and (min-width 768px) and (max-width 1200px)
 		font-size: 16px;
+.section-content
+	>.monuments-box
+		margin-top 30px
+
+
+
+.walk-street__buildings
+	display flex
+	justify-content: space-between;
+	position relative
+	overflow auto
+	&::-webkit-scrollbar
+		width: 0;
+	&::-webkit-scrollbar:horizontal
+		height 0
+	&::-webkit-scrollbar-track-piece
+		background inherit
+	&::-webkit-scrollbar-thumb
+		border-radius 1.5px
+		background-color: #c1c1c1
+		cursor pointer
+	// &:before
+	// 	content ''
+	// 	width 100%
+	// 	height: 5px 
+	// 	background #CAAF77;
+	// 	position absolute
+	// 	top: 39px;
+	// 	z-index: -1;
+	// 	left 75px
+.walk-street__building
+	margin 0 10px
+	cursor pointer
+	position relative
+	&:before
+		content ''
+		width calc(50% + 10px)
+		height: 5px 
+		background #caaf77;
+		position absolute
+		top: 39px;
+		z-index: -1;
+		left -10px
+	&:after
+		content ''
+		width calc(50% + 10px)
+		height: 5px 
+		background #caaf77;
+		position absolute
+		top: 39px;
+		z-index: -1;
+		right -10px
+
+	&:first-child
+		margin 0 10px 0 0
+		&:before
+			content ''
+			width 50%
+			height: 12px 
+			background #FFFFFF;
+			position absolute
+			top: 35px;
+			z-index: -1;
+			left 0
+	&:last-child
+		margin 0 0 0 10px
+		&:after
+			content ''
+			width 50%
+			height: 12px 
+			background #FFFFFF;
+			position absolute
+			top: 35px;
+			z-index: -1;
+			right 0
+	&:hover
+		.walk-street-building__title
+			color: #929292;
+		.walk-street-building__circle
+			background golden
+		.walk-street-building__img
+			border: 3px solid #DAC290; 
+.walk-street-building__title
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+.walk-street-building__circle
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin 6px auto 30px auto
+	background: #FFFFFF;
+	border: 7px solid golden;
+	box-sizing: border-box;
+	background #FFFFFF
+.walk-street-building__img
+	width: 180px;
+	height: 140px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 3px solid transparent; 
+	box-sizing: border-box;
+	
