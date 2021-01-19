@@ -102,7 +102,6 @@ function changeFirstChronicleVal(n){
 
 
 
-
 // day-history ->
 const historyDays = [
 	{
@@ -200,9 +199,9 @@ function createDayHistory(elem){
 }
 
 var firstHistoryDaysVal = 0
-document.getElementById('day-history__data-box--js').appendChild(createDayHistory(historyDays[firstChronicleVal]));
-document.getElementById('day-history__data-box--js').appendChild(createDayHistory(historyDays[firstChronicleVal + 1]));
-document.getElementById('day-history__data-box--js').appendChild(createDayHistory(historyDays[firstChronicleVal + 2]));
+document.getElementById('day-history__data-box--js').appendChild(createDayHistory(historyDays[firstHistoryDaysVal]));
+document.getElementById('day-history__data-box--js').appendChild(createDayHistory(historyDays[firstHistoryDaysVal + 1]));
+document.getElementById('day-history__data-box--js').appendChild(createDayHistory(historyDays[firstHistoryDaysVal + 2]));
 
 function changeFirstHistoryDaysVal(n){
 	if (firstHistoryDaysVal + n >= 0 && firstHistoryDaysVal + n <= historyDays.length - 3){
