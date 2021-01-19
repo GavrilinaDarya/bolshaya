@@ -656,12 +656,14 @@ a
 	margin-top 40px
 	padding 20px 40px 20px 32px
 .people-box__texts
-	display: flex;
 	flex-direction: column;
 	margin-right 40px
 	font-size: 14px;
 	line-height: 16px;
 	color: #929292;
+	display none
+	&.open
+		display: flex;
 	.golden-bold
 		font-weight: 500;
 		color golden

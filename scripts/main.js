@@ -213,3 +213,18 @@ function changeFirstHistoryDaysVal(n){
 }
 
 // <- day-history
+
+
+
+
+function peopleBoxSelect(elem, id) {
+	for (var i = 0; i < document.getElementsByClassName('people-box__texts').length; i++) {
+		document.getElementsByClassName('people-box__texts')[i].classList.remove('open');
+	}
+	document.getElementById(id).classList.add('open')
+
+	for (var i = 0; i < document.getElementsByClassName('people-box__photo').length; i++) {
+		document.getElementsByClassName('people-box__photo')[i].classList.remove('selected');
+	}
+	elem.classList.add('selected')
+}

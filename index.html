@@ -4,7 +4,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon"/>
 		<script src="./scripts/main.js" defer=""></script>
-		<script src="./scripts/comments.js" defer=""></script>
 		<link rel="stylesheet" href="./css/main.css"></link>
 	</head>
 	<body>
@@ -472,16 +471,28 @@
 						</div>
 					</div>
 					<div class="people-box">
-						<div class="people-box__texts">
-							<div class="header-text-quote">Улица Карла Маркса является цетральной транспортной артерией города.</div>
+						<div id="people-box__texts-1" class="people-box__texts open">
+							<div class="header-text-quote">1 Карла Маркса является цетральной транспортной артерией города.</div>
+							<div class="people-box__text-main">В 1726 году по указанию Саввы Рагузинского посад в Иркутске был обнесён валом с палисадом и рвом, которые тянулись от протоки реки Ангары до реки Ушаковки. К 1760 году палисад обветшал,  ров частично осыпался. По решению магистрата остатки укреплений были уничтожены, на их месте была проложена новая улица, которая получила название — Большая Першпективная, в просторечии — Большая.</div>
+							<div class="people-box__text-author"><span class="golden-bold">Дмитрий БЕРДНИКОВ</span> бывший мэр Иркутска</div>							
+						</div>
+
+						<div id="people-box__texts-2" class="people-box__texts">
+							<div class="header-text-quote">123 Карла Маркса является цетральной транспортной артерией города.</div>
+							<div class="people-box__text-main">В 1726 году по указанию Саввы Рагузинского посад в Иркутске был обнесён валом с палисадом и рвом, которые тянулись от протоки реки Ангары до реки Ушаковки. К 1760 году палисад обветшал,  ров частично осыпался. По решению магистрата остатки укреплений были уничтожены, на их месте была проложена новая улица, которая получила название — Большая Першпективная, в просторечии — Большая.</div>
+							<div class="people-box__text-author"><span class="golden-bold">Дмитрий БЕРДНИКОВ</span> бывший мэр Иркутска</div>							
+						</div>
+
+						<div id="people-box__texts-3" class="people-box__texts">
+							<div class="header-text-quote">3 Карла Маркса является цетральной транспортной артерией города.</div>
 							<div class="people-box__text-main">В 1726 году по указанию Саввы Рагузинского посад в Иркутске был обнесён валом с палисадом и рвом, которые тянулись от протоки реки Ангары до реки Ушаковки. К 1760 году палисад обветшал,  ров частично осыпался. По решению магистрата остатки укреплений были уничтожены, на их месте была проложена новая улица, которая получила название — Большая Першпективная, в просторечии — Большая.</div>
 							<div class="people-box__text-author"><span class="golden-bold">Дмитрий БЕРДНИКОВ</span> бывший мэр Иркутска</div>							
 						</div>
 
 						<div class="people-box__photos">
-							<div class="people-box__photo selected"  style="background-image: url('./assets/images/b8f9233c652eb49a1b17f510e6d745b2.png')"></div>
-							<div class="people-box__photo"  style="background-image: url('./assets/images/b8f9233c652eb49a1b17f510e6d745b2.png')"></div>
-							<div class="people-box__photo"  style="background-image: url('./assets/images/b8f9233c652eb49a1b17f510e6d745b2.png')"></div>
+							<div class="people-box__photo selected" onclick="peopleBoxSelect(this,'people-box__texts-1')" style="background-image: url('./assets/images/b8f9233c652eb49a1b17f510e6d745b2.png')"></div>
+							<div class="people-box__photo" onclick="peopleBoxSelect(this,'people-box__texts-2')" style="background-image: url('./assets/images/b8f9233c652eb49a1b17f510e6d745b2.png')"></div>
+							<div class="people-box__photo" onclick="peopleBoxSelect(this,'people-box__texts-3')" style="background-image: url('./assets/images/b8f9233c652eb49a1b17f510e6d745b2.png')"></div>
 						</div>
 						
 					</div>
