@@ -149,7 +149,10 @@ a
 	text-align: right;
 	margin auto 14px
 	@media screen and (max-width: 768px)
-		display none	
+		display none
+	&.show-mobile	
+		@media screen and (max-width: 768px)
+			display block
 	&:first-child
 		margin auto 14px auto 0
 	&:last-child
